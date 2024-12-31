@@ -14,9 +14,9 @@ const Hero = () => {
               Empowering Businesses to Acquire, Engage and Retain their Customers
               by Building Brand Loyalty
             </p>
-            <button className="bg-black text-yellow-500 px-6 py-3 rounded shadow-md hover:bg-gray-800 transition">
+            {/* <button className="bg-black text-yellow-500 px-6 py-3 rounded shadow-md hover:bg-gray-800 transition">
               Request a Demo
-            </button>
+            </button> */}
           </div>
 
           {/* Right Image */}
