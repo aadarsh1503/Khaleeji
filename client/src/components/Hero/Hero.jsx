@@ -1,5 +1,13 @@
 import React from "react";
 import "./Hero.css"
+import CardSection from "../CardSection/CardSection";
+import FCTReachSection from "../FCTReachSection/FCTReachSection";
+import FCTEngage from "../FCTEngage/FCTEngage";
+import FCTLoyalty from "../FCTLoyalty/FCTLoyalty";
+import TestimonialSlider from "../Testimonials/Testimonials";
+import ImpactSection from "../ImpactSection/ImpactSection";
+import FCTLearnSection from "../FCTLearnSection/FCTLearnSection";
+import Slide from "../Slide/Slide";
 const Hero = () => {
   return (
     <div className="">
@@ -31,6 +39,15 @@ const Hero = () => {
 
       
       </section>
+      <Slide />
+      <CardSection />
+      
+      <FCTReachSection />
+      <FCTEngage />
+      <FCTLoyalty />
+      <FCTLearnSection />
+      <ImpactSection />
+      <TestimonialSlider />
     </div>
   );
 };
