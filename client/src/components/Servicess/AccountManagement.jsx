@@ -1,5 +1,5 @@
 import React from 'react';
-
+import i1 from "./i1.png"
 import { BsCheckCircle } from "react-icons/bs"; // React Icons for tick marks
 const AccountManagement = () => {
   return (
@@ -16,7 +16,7 @@ const AccountManagement = () => {
     
         <div className="w-2/3 h-auto">
           {/* User will add image */}
-          <img src="https://www.unifynd.com/wp-content/uploads/2022/04/Frame-6208.svg" alt="Analytics Placeholder" className="" />
+          <img src={i1} alt="Analytics Placeholder" className="" />
         </div>
       </div>
 
