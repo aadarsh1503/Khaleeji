@@ -5,10 +5,10 @@ import { BsHouseDoor, BsUiRadios } from "react-icons/bs";
 const FCTLearnSection = () => {
   return (
     <div className="bg-gray-100 p-8 flex flex-col items-center text-center">
-      <h2 className="text-3xl font-bold mb-4 text-gray-900">
+      <h2 className="text-3xl font-bold mb-4 mt-10 text-gray-900">
         <span className=" px-2">With FCT Learn</span>
       </h2>
-      <p className="text-gray-700 text-lg max-w-2xl mb-8">
+      <p className="text-gray-700 text-lg max-w-2xl mb-12">
         Empower your team with data, analytics and insights about your customer shopping behaviour, preferences and optimise your marketing ROI.
       </p>
 
@@ -49,7 +49,7 @@ const FCTLearnSection = () => {
 </div>
 
 
-      <button className="bg-dwhite text-gray-700 py-2 px-6 mt-10 rounded">
+      <button className="bg-dwhite mb-16 text-gray-700 py-2 px-6 mt-10 rounded">
         Request A Demo
       </button>
     </div>

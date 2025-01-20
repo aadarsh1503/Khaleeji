@@ -3,8 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import "./Slide.css";
-import item2 from "./item2.png";
-import i3 from "./i3.png";
+import i2 from "./i2.png";
 import i4 from "./i4.png";
 import i5 from "./i5.png";
 import i1 from "./i1.png";
@@ -16,21 +15,11 @@ import i10 from "./i10.png";
 import i11 from "./i11.png";
 import i12 from "./i12.png";
 
+
 const Slide = () => {
-    const images = [i1, item2, i3, i4, i5, i6 ,i7,i8,i9,i10,i11,i12];
+    const images = [i1, i2, i4, i5, i6 ,i7,i8,i9,i10,i11,i12];
     const imageLinks = [
-        "http://www.pangea-network.com",
-        "https://www.glafamily.com/",
-        "http://www.logifem.com.tr",
-        "http://www.signaturegln.com",
-        "https://www.jctrans.com/en/",
-        "https://fiata.org/",
-        "https://bridginglogpro.com/",
-        "https://www.gtran.net/",
-        "https://www.worldfoodcargoalliance.com",
-        "https://crisscrossconnex.co.jp",
-        "https://www.df-alliance.com/",
-        "https://www.smilelogisticsnetworks.com/"
+        
     ];
 
     const [isLoaded, setIsLoaded] = useState(false);
@@ -63,7 +52,7 @@ const Slide = () => {
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2100,
         cssEase: "linear",
         pauseOnHover: false,
         beforeChange: (current, next) => {
@@ -100,7 +89,8 @@ const Slide = () => {
     };
 
     return (
-        <section className="py-10 lg:max-w-7xl lg:w-full w-[200px] mx-auto">
+        <section className="py-10 lg:max-w-7xl mb-10 lg:w-full w-[200px] mx-auto">
+           
         <div className="">
             {isLoaded ? (
                 <Slider ref={sliderRef} {...settings}>
@@ -110,8 +100,8 @@ const Slide = () => {
                                 <img
                                     src={src}
                                     alt={`Slide ${index + 1}`}
-                                    className="object-contain w-full md:w-3/4 mx-auto slide-image"
-                                    style={{ maxHeight: '300px' }}
+                                    className="object-contain w-full md:w-4/4 mx-auto slide-image"
+                                    style={{ maxHeight: '200px' }}
                                 />
                             </a>
                         </div>

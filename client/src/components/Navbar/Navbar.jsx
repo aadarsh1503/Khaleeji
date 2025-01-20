@@ -13,9 +13,9 @@ const Navbar = () => {
     <nav className="bg-dblack font-poppins shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="text-xl font-semibold text-gray-800">
+        <a href="/" className="text-xl font-semibold text-gray-800">
           <img src={i1} alt="Logo" className="h-24" />
-        </div>
+        </a>
 
         {/* Navigation Items */}
         <div className="flex  space-x-8">
@@ -84,7 +84,7 @@ const Navbar = () => {
     </div>
 
           {/* Item 2 */}
-          <div className="relative mt-4 text-tgray">
+          <a href="/services" className="relative mt-4 text-tgray">
             <button
               onClick={() => toggleDropdown(2)}
               className="hover:text-dwhite flex items-center"
@@ -93,7 +93,7 @@ const Navbar = () => {
 
             </button>
 
-          </div>
+          </a> 
 
           {/* Item 3 */}
           <div className="relative mt-4 text-tgray">
@@ -155,9 +155,9 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <div className="relative">
-          <button className=" bg-dwhite text-gray-700 py-3 px-4">Get in Touch</button>
-          </div>
+          <a href="/contact" className="relative mt-1">
+          <button className=" bg-dwhite text-gray-700 hover:bg-dblack hover:outline-dwhite hover:text-dwhite outline  py-3 px-4">Get in Touch</button>
+          </a>
         </div>
       </div>
     </nav>

@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-dgray text-white py-10">
         <h1 className='text-4xl text-center mt-16 '>Seasoned. Nimble. Active.</h1>
         <p className='text-lg text-center max-w-4xl mx-auto mt-6' >We are a diverse and passionate team that takes ownership and empowers you to execute the roadmap. We stay light on our feet and truly enjoy delivering great work.</p>
-        <button className='bg-dwhite mx-auto block mt-12 mb-16  text-gray-700 py-3 items-center justify-center px-4'>Get in Touch</button>
+        <button className='bg-dwhite mx-auto block mt-12 mb-16  hover:bg-dgray hover:outline-dwhite hover:text-dwhite outline  text-gray-700 py-3 items-center justify-center px-4'>Get in Touch</button>
             <div className="container mx-auto px-4 mt-6 border-t border-white pt-6"></div>
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Unifynd Logo and Contact */}
@@ -15,7 +15,7 @@ const Footer = () => {
             <img src="your-logo-placeholder.png" alt="Unifynd" className="w-32" />
           </div>
           <p className="mb-1">info[at]unifynd[dot]com</p>
-          <p>(022) 6741 1191</p>
+          <p>+973 17772211</p>
         </div>
 
         {/* Sitemap */}
@@ -23,7 +23,7 @@ const Footer = () => {
           <h4 className="font-bold mb-4">Sitemap</h4>
           <ul className="space-y-2">
             <li>FutureCustomer.Tech</li>
-            <li>Services</li>
+            <a href='/services' className='relative top-1'>Services</a>
             <li>Careers</li>
             <li>Resources</li>
           </ul>
@@ -46,12 +46,9 @@ const Footer = () => {
         <div>
           <h4 className="font-bold mb-4">Headquarters</h4>
           <p className="mb-2">
-            E-4, Gul Apartments, St. Andrews Road, Pali Hill, Bandra (W), Mumbai – 400050
+          Building: 1320, Rd No 4149, Block: 441, North Sehla, Kingdom of Bahrain
           </p>
-          <p className="mb-2">
-            A1-001, Centre Point Condominium, Opp Balwa Masjid, N.M. Joshi Marg, Lower Parel East, Mumbai – 400013
-          </p>
-          <p>CIN – U72900MH2015PTC268079</p>
+
         </div>
       </div>
 
@@ -65,7 +62,7 @@ const Footer = () => {
       placeholder="Enter your email address"
       className="px-4 py-2 bg-dgray text-white outline-none border-b-2 border-white w-full"
     />
-    <button className="text-white px-4 relative z-10">
+    <button className="text-white    hover:text-dwhite px-4 relative z-10">
       <AiOutlineMail />
     </button>
 
