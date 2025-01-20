@@ -14,8 +14,9 @@ const Servicess = () => {
         <h1 className="text-4xl md:text-4xl text-gray-900 leading-tight space-y-4">
         Amplify Customer Retention &<br /> Engagement and Create a<br /> Stellar Value Proposition with our <br />Robust Gen Next<br />Loyalty Program
         </h1>
-
-<button className='px-4 py-2 hover:text-white hover:bg-dgray bg-dwhite text-gray-700'>Talk to Us </button>
+<a href='/contact'>
+<button className='px-6 py-3 mt-8 outline hover:outline-black rounded-md hover:text-dblack hover:bg-white bg-dblack text-white'>Talk to Us </button>
+</a>
       </div>
 
       {/* Right Image */}

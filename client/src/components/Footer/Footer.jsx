@@ -1,11 +1,15 @@
 import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineYoutube, AiOutlineLinkedin, AiOutlineFacebook, AiOutlineMail } from 'react-icons/ai';
 import i1 from "./i1.png"
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => {
   return (
     <footer className="bg-dblack text-white py-10">
         <h1 className='text-4xl text-center mt-16 '>Seasoned. Nimble. Active.</h1>
         <p className='text-lg text-center max-w-4xl mx-auto mt-6' >We are a diverse and passionate team that takes ownership and empowers you to execute the roadmap. We stay light on our feet and truly enjoy delivering great work.</p>
-        <button className='bg-dwhite mx-auto block mt-12 mb-16  hover:bg-dblack hover:outline-dwhite hover:text-dwhite outline  text-gray-700 py-3 items-center justify-center px-4'>Get in Touch</button>
+        <a href='/contact'>
+        <button className='bg-dblack mx-auto block mt-12 mb-16  hover:bg-white rounded-md hover:text-black outline  text-white py-3 items-center justify-center px-4'>Get in Touch</button>
+        </a>
             <div className="container mx-auto px-4 mt-6 border-t border-white pt-6"></div>
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Unifynd Logo and Contact */}
@@ -14,8 +18,13 @@ const Footer = () => {
             {/* Replace with your logo image */}
             <img src={i1} alt="Unifynd" className="w-64" />
           </div>
-          <p className="mb-1">info[at]unifynd[dot]com</p>
-          <p>+973 17772211</p>
+          <p className="mb-1">
+  <a href="mailto:info@khaleeji.app" className=" hover:underline">info@khaleeji.app</a>
+</p>
+<p>
+  <a href="tel:+97317772211" className=" hover:underline">+973 17772211</a>
+</p>
+
         </div>
 
         {/* Sitemap */}
@@ -80,12 +89,18 @@ const Footer = () => {
       <div className="container mx-auto px-4 mt-6 border-t border-white pt-6">
         <div className="flex flex-col sm:flex-row justify-between items-center">
         <div className="flex space-x-4 mt-4 lg:mt-0">
-          <AiOutlineLinkedin className="text-2xl cursor-pointer hover:text-dwhite" />
-          <AiOutlineInstagram className="text-2xl cursor-pointer hover:text-dwhite" />
-          <AiOutlineYoutube className="text-2xl cursor-pointer hover:text-dwhite" />
-          <AiOutlineTwitter className="text-2xl cursor-pointer hover:text-dwhite" />
-          <AiOutlineFacebook className="text-2xl cursor-pointer hover:text-dwhite" />
-        </div>
+
+  <a href="https://www.instagram.com/khaleeji.reward/" target="_blank" rel="noopener noreferrer">
+    <AiOutlineInstagram className="text-2xl cursor-pointer hover:text-dwhite" />
+  </a>
+  <a href="https://x.com/Khaleeji_App" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faXTwitter} className="text-2xl cursor-pointer hover:text-dwhite" />
+  </a>
+  <a href="https://www.facebook.com/Khaleeji.Reward/" target="_blank" rel="noopener noreferrer">
+    <AiOutlineFacebook className="text-2xl cursor-pointer hover:text-dwhite" />
+  </a>
+</div>
+
           <p className="text-sm mt-4 sm:mt-0">© 2025 Khaleeji Loyal. All Rights Reserved.</p>
         </div>
       </div>

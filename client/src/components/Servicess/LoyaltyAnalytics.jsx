@@ -52,11 +52,11 @@ const LoyaltyAnalytics = () => {
             Earn and Burn Analysis
           </li>
         </ul>
-        <div className="mt-8 text-center md:text-left">
-          <button className="text-black font-semibold underline flex items-center hover:text-dgray">
+        <a href='/contact' className=" text-center md:text-left">
+          <button className="text-black font-semibold mt-6 underline flex items-center hover:text-dgray">
             Get in Touch &rarr;
           </button>
-        </div>
+        </a>
       </div>
     </section>
     </div>

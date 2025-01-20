@@ -98,16 +98,7 @@ const GetInTouch = () => {
       </div>
 
       {/* Company Name */}
-      <div>
-        <label className="block text-sm font-poppins font-medium text-gray-700">
-          Company Name <span className="text-red-500">*</span>
-        </label>
-        <input
-          type="text"
-          placeholder="Enter your company name"
-          className="w-full border border-gray-300 rounded-md p-2 "
-        />
-      </div>
+   
 
       {/* Monthly Active Users */}
       <div>
@@ -145,7 +136,7 @@ const GetInTouch = () => {
       <div>
         <button
           type="submit"
-          className="w-full bg-dwhite text-gray-700 py-2 px-4 rounded-md hover:text-white hover:bg-dblack"
+          className="w-full bg-dblack text-white outline hover:bg-white  hover:outline-black py-2 px-4 rounded-md hover:text-black "
         >
           Submit
         </button>

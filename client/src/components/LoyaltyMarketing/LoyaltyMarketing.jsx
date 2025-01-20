@@ -50,11 +50,11 @@ const LoyaltyMarketing = () => {
               Collaborate and partner with retailers to deploy personalized <br /> marketing strategies.
             </li>
           </ul>
-          <div className="mt-8 text-center md:text-left">
-            <button className="text-black font-semibold underline flex items-center hover:text-dgray">
+          <a href='/contact' className="text-center md:text-left">
+            <button className="text-black mt-8  font-semibold underline flex items-center hover:text-dgray">
               Get in Touch &rarr;
             </button>
-          </div>
+          </a>
         </div>
       </section>
     </div>
