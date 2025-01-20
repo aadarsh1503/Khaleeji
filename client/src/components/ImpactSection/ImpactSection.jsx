@@ -52,7 +52,7 @@ const ImpactSection = () => {
   }, [data]);
 
   return (
-    <div className="bg-dgray font-poppins py-24 px-6">
+    <div className="bg-dblack font-poppins py-24 px-6">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-semibold text-white">
           The Impact is Measureable
@@ -64,7 +64,7 @@ const ImpactSection = () => {
       <div className="grid grid-cols-1 max-w-5xl mx-auto md:grid-cols-4 text-center">
         {data.map((item, index) => (
           <div key={item.id} className="flex flex-col items-center">
-            <div className="bg-dgray outline outline-white p-4 rounded">
+            <div className="bg-dblack outline outline-white p-4 rounded">
               {item.icon}
             </div>
             <h3 className="text-4xl text-white font-bold mt-4">

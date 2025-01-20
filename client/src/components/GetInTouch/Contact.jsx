@@ -10,7 +10,7 @@ const ContactSection = () => {
   return (
     <div className='w-full min-h-screen'>
       <div
-        className="relative bg-cover bg-dgray h-[450px] bg-center"
+        className="relative bg-cover bg-dblack h-[450px] bg-center"
         style={{
           backgroundImage: `url()`,
         }}

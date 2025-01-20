@@ -1,8 +1,8 @@
 import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineYoutube, AiOutlineLinkedin, AiOutlineFacebook, AiOutlineMail } from 'react-icons/ai';
-
+import i1 from "./i1.png"
 const Footer = () => {
   return (
-    <footer className="bg-dgray text-white py-10">
+    <footer className="bg-dblack text-white py-10">
         <h1 className='text-4xl text-center mt-16 '>Seasoned. Nimble. Active.</h1>
         <p className='text-lg text-center max-w-4xl mx-auto mt-6' >We are a diverse and passionate team that takes ownership and empowers you to execute the roadmap. We stay light on our feet and truly enjoy delivering great work.</p>
         <button className='bg-dwhite mx-auto block mt-12 mb-16  hover:bg-dgray hover:outline-dwhite hover:text-dwhite outline  text-gray-700 py-3 items-center justify-center px-4'>Get in Touch</button>
@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Unifynd Logo and Contact */}
         <div>
-          <div className="mb-4">
+          <div className="mb-">
             {/* Replace with your logo image */}
-            <img src="your-logo-placeholder.png" alt="Unifynd" className="w-32" />
+            <img src={i1} alt="Unifynd" className="w-64" />
           </div>
           <p className="mb-1">info[at]unifynd[dot]com</p>
           <p>+973 17772211</p>
@@ -60,7 +60,7 @@ const Footer = () => {
     <input
       type="email"
       placeholder="Enter your email address"
-      className="px-4 py-2 bg-dgray text-white outline-none border-b-2 border-white w-full"
+      className="px-4 py-2 bg-dblack text-white outline-none border-b-2 border-white w-full"
     />
     <button className="text-white    hover:text-dwhite px-4 relative z-10">
       <AiOutlineMail />
