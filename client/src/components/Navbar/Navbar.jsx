@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* Dropdown Button */}
       <button
         onClick={() => toggleDropdown(1)}
-        className="hover:text-dwhite text-tgray  flex items-center justify-center mx-auto"
+        className="hover:text-dwhite text-white  flex items-center justify-center mx-auto"
       >
         FutureCustomer.Tech
         {openDropdown === 1 ? (
@@ -84,7 +84,7 @@ const Navbar = () => {
     </div>
 
           {/* Item 2 */}
-          <a href="/services" className="relative mt-4 text-tgray">
+          <a href="/services" className="relative mt-4 text-white">
             <button
               onClick={() => toggleDropdown(2)}
               className="hover:text-dwhite flex items-center"
@@ -96,7 +96,7 @@ const Navbar = () => {
           </a> 
 
           {/* Item 3 */}
-          <div className="relative mt-4 text-tgray">
+          <div className="relative mt-4 text-white">
             <button
               onClick={() => toggleDropdown(3)}
               className="hover:text-dwhite flex items-center"
@@ -127,7 +127,7 @@ const Navbar = () => {
           </div>
 
           {/* Item 4 */}
-          <div className="relative mt-4 text-tgray">
+          <div className="relative mt-4 text-white">
             <button
               onClick={() => toggleDropdown(4)}
               className="hover:text-dwhite flex items-center"
@@ -137,7 +137,7 @@ const Navbar = () => {
             </button>
 
           </div>
-          <div className="relative  mt-4 text-tgray">
+          <div className="relative  mt-4 text-white">
             <button
           onClick={() => toggleDropdown(5)}
               className="hover:text-dwhite flex items-center"

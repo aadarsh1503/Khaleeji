@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-dblack text-white py-10">
         <h1 className='text-4xl text-center mt-16 '>Seasoned. Nimble. Active.</h1>
         <p className='text-lg text-center max-w-4xl mx-auto mt-6' >We are a diverse and passionate team that takes ownership and empowers you to execute the roadmap. We stay light on our feet and truly enjoy delivering great work.</p>
-        <button className='bg-dwhite mx-auto block mt-12 mb-16  hover:bg-dgray hover:outline-dwhite hover:text-dwhite outline  text-gray-700 py-3 items-center justify-center px-4'>Get in Touch</button>
+        <button className='bg-dwhite mx-auto block mt-12 mb-16  hover:bg-dblack hover:outline-dwhite hover:text-dwhite outline  text-gray-700 py-3 items-center justify-center px-4'>Get in Touch</button>
             <div className="container mx-auto px-4 mt-6 border-t border-white pt-6"></div>
       <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Unifynd Logo and Contact */}
