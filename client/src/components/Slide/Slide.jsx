@@ -14,12 +14,25 @@ import i9 from "./i9.png";
 import i10 from "./i10.png";
 import i11 from "./i11.png";
 import i12 from "./i12.png";
-
+import i101 from "./i101.jpg"
+import i100 from "./i100.png";
 
 const Slide = () => {
-    const images = [i1, i2, i4, i5, i6 ,i7,i8,i9,i10,i11,i12];
+    const images = [i1, i2, i4, i5, i6,i101 ,i7,i8,i9,i10,i11,i12,i100];
     const imageLinks = [
-        
+        "https://example.com/link1",
+        "https://alshaheen.pro/",
+        "https://saffary.com/",
+        "https://alshaheenexpress.com/",
+        "https://gvscargo.com/",
+        "https://gvscargo.net/",
+        "https://gvs-bh.com/",
+        "https://example.com/link8",
+        "https://example.com/link9",
+        "https://www.aquacare.me/",
+        "https://example.com/link11",
+        "https://arabiaseel.com/",
+        "https://alzyara.com/"
     ];
 
     const [isLoaded, setIsLoaded] = useState(false);
@@ -96,7 +109,7 @@ const Slide = () => {
                 <Slider ref={sliderRef} {...settings}>
                     {images.map((src, index) => (
                         <div key={index} className="slide-item">
-                            <a href={imageLinks[index]} target="_blank" rel="noopener noreferrer" className="image-link">
+                            <a href={imageLinks[index]} target="_blank" rel="noopener noreferrer" className="image-link" style={{ outline: 'none' }}>
                                 <img
                                     src={src}
                                     alt={`Slide ${index + 1}`}

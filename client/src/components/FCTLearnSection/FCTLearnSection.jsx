@@ -48,10 +48,11 @@ const FCTLearnSection = () => {
   </div>
 </div>
 
-
+<a href="/contact">
       <button className="bg-black hover:bg-gray-100 font-poppins  hover:text-black hover:outline-black outline text-white mb-16  py-4 px-6 mt-10 rounded">
         Request A Demo
       </button>
+      </a>
     </div>
   );
 };
