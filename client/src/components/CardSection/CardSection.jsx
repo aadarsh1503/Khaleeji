@@ -49,7 +49,8 @@ const CardSection = () => {
 
 
   return (
-    <div className="flex flex-col  items-center mb-20 lg:mb-64">
+    <>
+    <div className="lg:flex hidden flex-col  items-center mb-20 lg:mb-64">
     <h2 className="text-3xl font-bold mb-5">Customer Engagement and Loyalty Made Simple</h2>
     <p className="text-gray-600 text-xl mb-6 lg:mb-44">FutureCustomer.Tech enables you to</p>
     <div className="relative flex justify-center mt-32 items-center mb-20 gap-4 w-full">
@@ -76,6 +77,33 @@ const CardSection = () => {
       ))}
     </div>
   </div>
+
+  <div className="flex p-4 flex-col items-center mb-20 lg:hidden">
+      <h2 className="text-3xl font-bold mb-5 text-center">Customer Engagement and Loyalty Made Simple</h2>
+      <p className="text-gray-600 text-xl mb-10 text-center">FutureCustomer.Tech enables you to</p>
+
+      {/* Cards Section - Mobile Only */}
+      <div className="flex flex-col gap-8 w-full">
+        {cards.map((card) => (
+          <div
+            key={card.title}
+            className="bg-white shadow-custom rounded-lg p-6 flex flex-col items-center"
+          >
+            {/* Card Text Content */}
+            <h3 className="text-lg font-semibold text-center mb-4">{card.title}</h3>
+            <p className="text-gray-500 text-center mb-6">{card.description}</p>
+
+            {/* Card Image */}
+            <img
+              src={card.image}
+              alt={card.title}
+              className="w-full h-48 object-contain"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+    </>
   
   );
 };

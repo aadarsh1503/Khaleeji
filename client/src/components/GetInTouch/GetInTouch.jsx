@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineEnvironment } from "react-icons/ai";
 import ContactSection from "./Contact";
 import PhoneInput from "react-phone-input-2";
+import i2 from"./i2.svg"
 import "react-phone-input-2/lib/style.css";
 const GetInTouch = () => {
   return (
@@ -15,13 +16,13 @@ const GetInTouch = () => {
   {/* Flex container for left and right sections */}
   <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
     {/* Left Section - Address */}
-    <div className="bg-white shadow-lg z-10 rounded-lg p-6 text-center space-y-4 relative left-32 h-56 bottom-20 lg:w-96">
+    <div className="bg-white shadow-lg z-10 rounded-lg p-6 text-center space-y-4 relative left-0  lg:left-32 h-56 bottom-64 lg:bottom-20 lg:w-96">
         <div className=" bottom-16 relative">
       <div className=" ">
         <img
-          src="https://www.unifynd.com/wp-content/uploads/2022/04/Frame-6323.svg" 
+          src={i2}
           alt="Map"
-          className="w- h- relative bottom-10 left-12 object-fill rounded-xl"
+          className="w- h- relative bottom-10 left-16 lg:left-12 object-fill rounded-xl"
         />
        
       </div>
@@ -40,12 +41,12 @@ const GetInTouch = () => {
     </div>
     </div>
     {/* Right Section - Form */}
-    <div className=" mx-auto px-4 py-8 grid relative left-64 overflow-hidden -mt-[400px] lg:grid-cols-2  gap-8">
+    <div className=" mx-auto px-4 py-8 grid relative left-0 lg:left-64 overflow-hidden -mt-72 lg:-mt-[400px] lg:grid-cols-2  gap-8">
   {/* Left Section - Address */}
 
 
   {/* Right Section - Form */}
-  <div className="bg-white shadow-lg z-10 w-[500px] font-poppins  rounded-lg p-8">
+  <div className="bg-white shadow-lg z-10 w-full lg:w-[500px] font-poppins  rounded-lg p-8">
     <form className="space-y-5">
       {/* Name */}
       <div className="grid lg:grid-cols-2 gap-4">

@@ -15,7 +15,10 @@ const Hero = () => {
         <div className="mx-auto flex flex-col md:flex-row items-center justify-between">
           {/* Left Content */}
           <div className="md:w-1/2 text-left space-y-6 z-10">
-            <h1 className="text-4xl md:text-5xl text-gray-900 leading-loose space-y-4">
+            <h1 className="text-4xl md:text-5xl lg:flex hidden text-gray-900 lg:leading-none leading-loose">
+              Enabling Businesses<br /> to Manage their<br /> Customer Lifecycle
+            </h1>
+            <h1 className="text-4xl md:text-5xl lg:hidden flex text-gray-900 ">
               Enabling Businesses<br /> to Manage their<br /> Customer Lifecycle
             </h1>
             <p className="text-lg text-gray-600">

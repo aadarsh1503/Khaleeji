@@ -61,9 +61,9 @@ const ImpactSection = () => {
           Improve your KPIs, Increase Visits and Boost Sales
         </p>
       </div>
-      <div className="grid grid-cols-1 max-w-5xl mx-auto md:grid-cols-4 text-center">
+      <div className="grid grid-cols-1 max-w-5xl mx-auto md:grid-cols-4  text-center">
         {data.map((item, index) => (
-          <div key={item.id} className="flex flex-col items-center">
+          <div key={item.id} className="flex flex-col  lg:mb-0 mb-6 items-center">
             <div className="bg-dblack outline outline-white p-4 rounded">
               {item.icon}
             </div>

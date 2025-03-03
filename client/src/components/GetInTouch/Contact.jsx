@@ -25,8 +25,11 @@ const ContactSection = () => {
             <h1 className="lg:text-5xl text-2xl font-bertioga font-bold mb-8">Get in Touch</h1>
 
             {/* Description */}
-            <p className="text-16 lg:w-full w-1/2 mb-8">
+            <p className="text-16 lg:w-full lg:flex hidden  w-full mb-8">
             Get in touch with us to learn more about our<br />features, request a demo, or even to learn more <br /> about us — we’re ready to answer any and all of<br /> your questions!
+            </p>
+            <p className="text-16 lg:w-full lg:hidden flex  w-full mb-8">
+            Get in touch with us to learn more about our features, request a demo, or even to learn more  about us — we’re ready to answer any and all of your questions!
             </p>
 
       
