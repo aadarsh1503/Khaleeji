@@ -4,18 +4,19 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import GetInTouch from './components/GetInTouch/GetInTouch';
 import Servicess from './components/Servicess/Servicess';
+import { DirectionProvider } from './components/DirectionContext';
 
 
 function App() {
   return (
     <Router>
       <div>
+        <DirectionProvider />
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/contact" element={<GetInTouch />} />
           <Route path="/services" element={<Servicess />} />
-
         </Routes>
         <Footer />
       </div>
