@@ -47,7 +47,7 @@ const Hero = () => {
 
       
       </section>
-      <Slide />
+      
       <CardSection />
       
       <FCTReachSection />
