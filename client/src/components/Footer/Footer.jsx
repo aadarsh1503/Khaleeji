@@ -17,7 +17,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="bg-dblack text-white py-10">
+    <footer className="bg-dblack text-white overflow-x-hidden py-10">
       <h1 className='text-4xl text-center mt-16'>{t('seasoned_nimble_active')}</h1>
       <p className='text-lg text-center max-w-4xl mx-auto mt-6'>{t('team_description')}</p>
       <a href='/contact'>

@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <div className="">
-      <section className="max-w-7xl font-poppins mt-10 mx-auto py-16 px-8 relative">
+      <section className="max-w-7xl overflow-x-hidden font-poppins mt-10 mx-auto py-16 px-8 relative">
         <div className="mx-auto flex flex-col md:flex-row items-center justify-between">
           {/* Left Content */}
   <div className="md:w-1/2 text-left space-y-6 z-10">

@@ -56,7 +56,7 @@ const CardSection = () => {
 
   return (
     <>
-      <div className="lg:flex hidden flex-col items-center mb-20 lg:mb-64">
+      <div className="lg:flex  hidden flex-col items-center mb-20 lg:mb-64">
         <h2 className="text-3xl font-bold mb-5">{t('customer_engagement')}</h2>
         <p className="text-gray-600 text-xl mb-6 lg:mb-44">{t('enable_by_futurecustomer')}</p>
 

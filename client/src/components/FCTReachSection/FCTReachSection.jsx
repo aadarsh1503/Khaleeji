@@ -7,7 +7,7 @@ const FCTReachSection = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* Heading Section */}
       <div className="text-center font-poppins">
         <h2 className="text-xl mt-10 lg:text-3xl font-semibold mb-2">

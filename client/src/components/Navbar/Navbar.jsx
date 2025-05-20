@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="bg-dblack lg:block hidden font-poppins shadow-md">
+      <nav className="bg-dblack lg:block hidden overflow-x-hidden font-poppins shadow-md">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <a href="/" className="text-xl font-semibold text-gray-800">
