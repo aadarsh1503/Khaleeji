@@ -98,7 +98,10 @@ const Footer = () => {
               <AiOutlineFacebook className="text-2xl cursor-pointer hover:text-dwhite" />
             </a>
           </div>
-          <p className="text-sm mt-4 sm:mt-0">© 2025 {t('company_name')}. {t('all_rights_reserved')}</p>
+          <p className="text-sm mt-4 sm:mt-0">
+  © {new Date().getFullYear()} {t('company_name')}. {t('all_rights_reserved')}
+</p>
+
         </div>
       </div>
     </footer>
