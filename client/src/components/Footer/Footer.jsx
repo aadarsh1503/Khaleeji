@@ -1,4 +1,13 @@
-import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineYoutube, AiOutlineLinkedin, AiOutlineFacebook, AiOutlineMail } from 'react-icons/ai';
+import {
+  AiOutlineTwitter,
+  AiOutlineInstagram,
+  AiOutlineYoutube,
+  AiOutlineLinkedin,
+  AiOutlineFacebook,
+  AiOutlineMail,
+  AiOutlineArrowRight,
+  AiOutlineArrowLeft,
+} from 'react-icons/ai';
 import i1 from "./i1.png";
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,13 +17,48 @@ import { useEffect, useState } from 'react';
 const Footer = () => {
   const { t, i18n } = useTranslation();
   const [isRTL, setIsRTL] = useState(i18n.language === 'ar');
-  const [cards, setCards] = useState([]);
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setIsRTL(i18n.language === 'ar');
     document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
   }, [i18n.language, isRTL]);
 
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) {
+      setMessage('Please enter a valid email address.');
+      return;
+    }
+
+    try {
+      setLoading(true);
+      const formData = new FormData();
+      formData.append('email', email);
+      formData.append('list', 'EIOYqjtqPDtZp89C70AyEA');
+      formData.append('subform', 'yes');
+      formData.append('hp', '');
+
+      await fetch('https://send.alzyara.com/subscribe', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors',
+      });
+
+      setMessage(t('thank_you_subscribing'));
+      setEmail('');
+      setTimeout(() => setMessage(''), 3000);
+    } catch (error) {
+      console.error('Error:', error);
+      setMessage('Subscription failed. Please try again.');
+      setTimeout(() => setMessage(''), 3000);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <footer className="bg-dblack text-white overflow-x-hidden py-10">
@@ -62,46 +106,52 @@ const Footer = () => {
 
         <div>
           <h4 className="font-bold mb-4">{t('headquarters')}</h4>
-          <p className="mb-2">
-            {t('address')}
-          </p>
+          <p className="mb-2">{t('address')}</p>
         </div>
       </div>
 
+      {/* Newsletter Form */}
       <div className={`container mx-auto relative right-8 ${i18n.language === 'ar' ? 'left-5' : 'left-10'} px-4 mt-10 flex flex-col lg:flex-row lg:justify-end lg:items-center`}>
         <div>
           <h4 className="font-bold mb-4">{t('newsletter')}</h4>
-          <div className={`flex items-center  relative ${i18n.language === 'ar' ? 'left-5' : 'right-10'}`}>
+          <form onSubmit={handleSubscribe} className={`flex items-center relative ${i18n.language === 'ar' ? 'left-5' : 'right-10'}`}>
             <input
               type="email"
               placeholder={t('enter_email')}
               className="px-4 py-2 bg-dblack text-white outline-none border-b-2 border-white w-full"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
-            <button className="text-white hover:text-dwhite px-4 relative z-10">
-              <AiOutlineMail />
-            </button>
+           <button
+  type="submit"
+  className={`text-black bg-white p-2 rounded-full shrink-0 hover:text-dwhite relative z-10`}
+  disabled={loading}
+>
+  {i18n.language === 'ar' ? <AiOutlineArrowLeft /> : <AiOutlineArrowRight />}
+</button>
             <div className="absolute bottom-0 left-0 right-0 border-b-2 border-white z-0" />
-          </div>
+          </form>
+          {message && <p className="text-sm text-white mt-2">{message}</p>}
         </div>
       </div>
 
       <div className="container mx-auto px-4 mt-6 border-t border-white pt-6">
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <div className="flex space-x-4 mt-4 lg:mt-0">
-            <a href="https://www.instagram.com/khaleeji.reward/" target="_blank"  rel="noopener noreferrer">
+            <a href="https://www.instagram.com/khaleeji.reward/" target="_blank" rel="noopener noreferrer">
               <AiOutlineInstagram className="text-2xl cursor-pointer ml-4 hover:text-dwhite" />
             </a>
             <a href="https://x.com/Khaleeji_App" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faXTwitter} className="text-2xl cursor-pointer  hover:text-dwhite" />
+              <FontAwesomeIcon icon={faXTwitter} className="text-2xl cursor-pointer hover:text-dwhite" />
             </a>
             <a href="https://www.facebook.com/Khaleeji.Reward/" target="_blank" rel="noopener noreferrer">
               <AiOutlineFacebook className="text-2xl cursor-pointer hover:text-dwhite" />
             </a>
           </div>
           <p className="text-sm mt-4 sm:mt-0">
-  © {new Date().getFullYear()} {t('company_name')}. {t('all_rights_reserved')}
-</p>
-
+            © {new Date().getFullYear()} {t('company_name')}. {t('all_rights_reserved')}
+          </p>
         </div>
       </div>
     </footer>
