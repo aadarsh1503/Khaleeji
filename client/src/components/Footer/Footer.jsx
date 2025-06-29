@@ -85,22 +85,23 @@ const Footer = () => {
         <div>
           <h4 className="font-bold mb-4">{t('sitemap')}</h4>
           <ul className="space-y-2">
-            <li>{t('future_customer_tech')}</li>
+            {/* <li>{t('future_customer_tech')}</li> */}
             <a href='/services' className='relative top-1'>{t('services')}</a>
             <li>{t('careers')}</li>
-            <li>{t('resources')}</li>
+            {/* <li>{t('resources')}</li> */}
           </ul>
         </div>
 
         <div>
           <h4 className="font-bold mb-4">{t('more_about_us')}</h4>
           <ul className="space-y-2">
-            <li>{t('about_us')}</li>
-            <li>{t('security')}</li>
-            <li>{t('privacy_policy')}</li>
-            <li>{t('terms_of_service')}</li>
-            <li>{t('get_in_touch')}</li>
-            <li>{t('request_a_demo')}</li>
+          <li><a href="/">{t('about_us')}</a></li>
+{/* <li><a href="/security">{t('security')}</a></li>
+<li><a href="/privacy-policy">{t('privacy_policy')}</a></li>
+<li><a href="/terms-of-service">{t('terms_of_service')}</a></li> */}
+<li><a href="/contact">{t('get_in_touch')}</a></li>
+{/* <li><a href="/request-demo">{t('request_a_demo')}</a></li> */}
+
           </ul>
         </div>
 
